@@ -1,0 +1,19 @@
+/* body{
+    text-align: center;
+}
+
+#w{ margin: 200px;
+list-style-type: georgian;
+list-style-position: inside;
+} */
+
+/* table {
+    border: 2px solid red;
+} */
+/* .onetable{
+    empty-cells: show;
+}
+table th,td {
+    border: 20x saddlebrown;
+} */
+table.one { border: 20x solid red;}

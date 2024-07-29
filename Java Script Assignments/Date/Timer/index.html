@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown to Eid ul-Adha</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .countdown-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+  }
+  .countdown-title {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+  .countdown {
+    font-size: 40px;
+  }
+
+  body{
+    background-image: url("./bakra\ eid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+</head>
+<body>
+<div class="countdown-container">
+  <div class="countdown-title">Countdown to Eid ul-Adha</div>
+  <div id="countdown" class="countdown">
+    Loading countdown...
+  </div>
+</div>
+<script>
+  const countdown = document.getElementById('countdown');
+  const eidDate = new Date('June 16, 2024 00:00:00').getTime();
+
+  const interval = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = eidDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(interval);
+      countdown.innerHTML = "Eid Mubarak!";
+    }
+  }, 1000);
+</script>
+</body>
+</html>

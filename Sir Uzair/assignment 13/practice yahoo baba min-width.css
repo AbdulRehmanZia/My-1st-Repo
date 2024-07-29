@@ -1,0 +1,17 @@
+#first-heading{
+    color: chocolate;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.firstdiv{
+    border: 50px solid red;
+    padding: 27px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}

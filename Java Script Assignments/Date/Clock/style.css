@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#hours,#mins,#seconds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+    color: white;
+    border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow-animation 1s infinite alternate;
+}
+
+button{
+    height: 50px;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    border: 2px solid transparent;
+    animation: glow-animation-button 1s infinite alternate;
+
+}
+
+#start{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+#stop{
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+@keyframes glow-animation {
+    from {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), /* Red glow */
+                    0 0 20px rgba(0, 255, 0, 0.8), /* Green glow */
+                    0 0 30px rgba(0, 0, 255, 0.8); /* Blue glow */
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8), /* Red glow */
+                    0 0 30px rgba(0, 255, 0, 0.8), /* Green glow */
+                    0 0 40px rgba(0, 0, 255, 0.8); /* Blue glow */
+    }
+}
+
+@keyframes glow-animation-button {
+    from {
+        box-shadow: 0 0 10px rgba(0, 128, 255, 0.8); /* Initial glow color and intensity (bluish) */
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Final glow color and intensity (bluish) */
+    }
+}

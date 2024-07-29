@@ -1,0 +1,17 @@
+*{
+    color: gray;
+}
+h1{
+    color: darkblue;
+    background-color: lightcyan;
+}
+#main-title {
+    background-color: mistyrose;
+}
+.nav-link {
+    color: forestgreen;
+    background-color:lightyellow ;
+}
+#a{
+    background-color: lemonchiffon;
+}

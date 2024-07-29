@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: antiquewhite;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+.calculator {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator > div {
+  border: 1px solid blueviolet;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.calculator > .equal {
+  grid-row: 4 / 6;
+  grid-column: 4/-1;
+  align-self: center;
+  font-size: 60px;
+  border: none;
+  background-color: greenyellow;
+}
+
+.name{
+    border: 1px solid;
+}

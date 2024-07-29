@@ -1,0 +1,41 @@
+/* .para {
+    color: blueviolet;
+}
+
+.para ::first-letter{
+    color: black;
+}
+
+
+ .link :visited{
+    background-color: brown;
+ }
+ 
+ .link :active{
+    color: black;
+}
+.link :hover{
+    color: blue;
+ } */
+
+ body{
+    background-color: rgb(211, 197,11);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+ }
+
+ h1{ text-transform: lowercase;
+font-size: 200px;
+line-height: 5px;}
+h4{
+    font-weight: 100;
+    font-size: 50px;
+    color: blueviolet;
+}
+ p {display: inline-block;
+width: 314px;
+text-align: left;
+}
+p + p{
+    margin: 100px;
+}

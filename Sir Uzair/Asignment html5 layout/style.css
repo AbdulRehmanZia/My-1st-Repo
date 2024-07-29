@@ -1,0 +1,59 @@
+.mainbox{
+    background-color:white;
+    height: 100%;
+    border:2px solid black;
+}
+.mainbox .mainbox2{
+    margin: 2%;
+    background-color: whitesmoke;
+    height:100%;
+    justify-content: space-between;
+    row-gap: 10px   ;
+}
+.mainbox .mainbox2 .header{
+    margin: 2% ;
+    height:100px;
+    border: 2px solid black;
+}
+.mainbox .mainbox2 .header .nav{
+    height: 30px;
+    border: 2px dotted black;
+    margin-top: 43px;
+    margin: 1%;
+    padding-right: 10px;
+}
+.mainbox .mainbox2 .content{    
+    margin: 2% ;
+    height: 300px;
+    border: 2px solid black;
+    width: 75%;
+    display: inline ;
+}
+.mainbox .mainbox2 .aside{    
+    margin: 2% ;
+    height: 300px;
+    border: 2px solid black;
+    width: 30%;
+    display: flex;
+}
+.mainbox .mainbox2 .display{
+    display: flex;
+   column-gap: 5px;
+}
+.mainbox .mainbox2 .footer{
+    border: 2px solid black;
+    margin: 2%;
+}
+.mainbox .mainbox2 .content .article1{
+    border: 2px dotted black;
+    margin: 2%;
+    height: 35%;
+}
+.mainbox .mainbox2 .content .article2{
+    border: 2px dotted black;
+    margin: 2%;
+    height: 35%;
+}
+.mainbox .text{
+    color: rgb(245, 11, 89);
+}

@@ -1,0 +1,20 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0 auto;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#hours,#mins,#seconds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+}

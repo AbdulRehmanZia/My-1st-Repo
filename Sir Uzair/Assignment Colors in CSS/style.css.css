@@ -1,0 +1,22 @@
+#main-title {
+    color: blue;
+}
+#color-box {
+    background-color: yellow;
+}
+p{
+    color: rgba(0,128,0,0.3);
+}
+.intro-paragraph {
+    color: rgb(255, 99, 71);
+  }
+  #main-title {
+    background-color: hsl(210, 100%, 50%);
+  }
+  
+  .intro-paragraph {
+    color: #8a2be2;
+  }
+  #color-box {
+    color: coral;
+  }
